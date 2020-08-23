@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="calculator.css">
+<html>
+    <body>
+        <h2>Yali-Web</h2>
+        <table>
+            <tr>
+                <th><a href="index.html">Home  </a></th>
+                <th><a href="calculator.html">Calculator  </a></th>
+                <th><a href="Fake.html">Fake Massage  </th>
+                <th><a href="passcheck.html">Password Check  </th>
+                
+            </tr>
+        </table>
+        </body>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+
+           <form name="calculator">
+           <center>
+            <input type="text" name="answer" id="a" disabled/>
+            <input type="button" value="C" onclick="calculator.answer.value = ''" id="b" class="c"/>
+<input type="button" value="(" onclick="calculator.answer.value += '('" id="b" class="d">
+<input type="button" value=")" onclick="calculator.answer.value += ')'" id="b" class="d">
+<input type="button" value="÷" id="b" class="d" onclick="calculator.answer.value += '/'">
+
+            <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" id="b"/>
+            <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" id="b"/>
+            <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" id="b"/>
+            <input type="button" value=" + " onclick="calculator.answer.value += '+'" id="b" class="d"/>
+
+
+            <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" id="b"/>
+            <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" id="b"/>
+            <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" id="b"/>
+            <input type="button" value=" - " onclick="calculator.answer.value += '-'" id="b" class="d"/>
+
+
+            <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" id="b"/>
+            <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" id="b"/>
+            <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" id="b"/>
+
+            <input type="button" value=" × " onclick="calculator.answer.value += '*'" id="b" class="d"/>
+           <input type="button" value="X" onclick="back()" id="b" class="e"/>
+            <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" id="b"/>
+            <input type="button" value="." onclick="calculator.answer.value += '.'" id="b">
+            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" id="b" class="f"/>
+</form>
+<script>
+function back(){
+    var last = document.calculator.answer.value;
+    document.calculator.answer.value = last.substr(0,last.length-1);
+}
+</script>
+    </body>
+</html>
