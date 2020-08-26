@@ -1,24 +1,126 @@
-<!DOCTYPE html>
-<html></html>
-<head>
-<style>
-table {
-	border-collapse: collapse;
-	border: 1px solid black;
-}
-</style>
-</head>
-<body>
-<h2>Yali-Web</h2>
-<table>
-	<tr>
 
-		<th><a href="index.html">Home  </a></th>
-                <th><a href="calculator/calculator.html">Calculator  </a></th>
-                <th><a href="fake/Fake.html">Fake Massage  </a></th>
-                <th><a href="passcheck/passcheck.html">Password Check  </a></th>
-		
-	</tr>
-</table>
-</body>
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yali-Web</title>
+
+
+    </head>
+    <body>
+
+       <div id="d1">
+          <p id="p1">click me</p>
+       </div>
+
+       <div id="d2">
+         <p id="p2"><span class="spn">Welcome</span> <span class="spn">to</span> <span class="spn">Yali-Web</span></p>
+         <div id="d3">
+            <h3>
+                <table>
+                    <tr>
+
+                        <th><a href="index.html">Home  </a></th>
+                                <th><a href="calculator/calculator.html">Calculator  </a></th>
+                                <th><a href="fake/Fake.html">Fake Massage  </a></th>
+                                <th><a href="passcheck/passcheck.html">Password Check  </a></th>
+
+                    </tr>
+                </table>
+               <span>This is my website</span>
+               <span>I upload my small projects here</span>
+               <span>DM me for requests, bugs and improvements</span>
+               <span>My IG is yaliharel30</span>
+               <span>I will update the website weekly</span>
+               <span>*This is not a professional website</span>
+            </h3>
+
+         </div>
+       </div>
+
+    <script>
+        var d1 = document.getElementById("d1");
+        var d2 = document.getElementById("d2");
+        var d3 = document.getElementById("d3");
+        var p1 = document.getElementById("p1");
+        var p2 = document.getElementById("p2");
+
+d1.addEventListener("click", func, false);
+
+function func(){
+        d1.style.display="none"
+        d2.style.borderRadius="50%";
+        d2.style.width="40px";
+        d2.style.height="40px";
+        d2.style.transition="all .3s .3s ease-out";
+        setTimeout(bdr,1000);
+    function bdr(){
+        d2.style.border="3px solid white";
+        d2.style.width="55px";
+        d2.style.background="none";
+        d2.style.height="55px";
+        d2.style.transition="all .3s .3s ease-out";
+    }
+    setTimeout(wid,2000);
+    function wid(){
+        d2.style.borderRadius="30px";
+        d2.style.border="3px solid white";
+        d2.style.width="310px";
+        d2.style.background="none";
+        d2.style.padding="0px 10px";
+        d2.style.height="55px";
+        d2.style.transition="all .3s ease-out";
+    }
+    setTimeout(sPn,2500);
+    function sPn(){
+        p2.style.display="block"
+    }
+    setTimeout(function (){
+        p2.style.display="none"
+    },7500);
+    setTimeout(function (){
+        d2.style.borderRadius="50%";
+        d2.style.padding="0px";
+        d2.style.width="55px";
+        d2.style.height="55px";
+        d2.style.transition="all .3s ease-out";
+    },8000);
+    setTimeout(function (){
+        d2.style.background= "white";
+        d2.style.transition="all .3s ease-out"
+    },8500);
+
+    setTimeout(function (){
+    d2.style.width="240px";
+    d2.style.height="240px";
+    d2.style.transition="all 1s ease-out";
+    },9000);
+
+    setTimeout(function (){
+        d2.style.width="0px";
+        d2.style.height="0px";
+        d2.style.opacity="0";
+        d2.style.transition="all .3s ease-out";
+        d2.style.borderRadius="50%";
+    },9600);
+
+    setTimeout(function (){
+        d2.style.width="100%";
+        d2.style.height="100%";
+        d2.style.opacity="1";
+        d2.style.transition="all .5s ease-out";
+        d2.style.borderRadius="0%";
+    },10000);
+
+    setTimeout(function (){
+    d3.style.display="block";
+    d3.style.transition="all .2s ease-out";
+    },10500);
+}
+
+    </script>
+
+    </body>
 </html>
