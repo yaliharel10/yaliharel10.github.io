@@ -1,0 +1,166 @@
+
+body {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100vh;
+    background:black;
+    overflow:hidden;
+}
+
+#d1 {
+    width:250px;
+    height:150px;
+    background:yellow;
+    border-radius:35px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative ;
+
+}
+
+#d1 p {
+    color:black;
+    font-weight:bold;
+    font-size:25px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+}
+
+
+
+#d2 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:0px;
+    height:0px;
+    background:white;
+    border-radius:50%;
+    transform:rotate(0deg);
+}
+
+
+#d2 #p2 {
+    color:white;
+    font-size:25px;
+    text-transform:uppercase;
+    display:none;
+}
+
+#d2 #p2 .spn {
+    color:yellow;
+    opacity:0;
+    animation:spn 1s 1s 1 ease-in-out forwards;
+
+}
+
+@keyframes spn {
+    0%{opacity:0;}
+    100%{opacity:1}
+}
+
+#d2 #p2 span:nth-child(2) {
+    animation-delay:1.7s;
+}
+
+#d2 #p2 span:nth-child(3) {
+    animation-delay:2.4s;
+}
+
+
+#d2 #d3 {
+    width:800px;
+    height:500px;
+    border:5px solid black;
+    padding:10px;
+    overflow:hidden;
+    position:relative;
+    transform:scale(0);
+    display:none;
+    animation:d3 1s 1 ease-out forwards;
+}
+
+@keyframes d3 {
+    0%{transform:scale(0);}
+    100%{transform:scale(1);}
+}
+
+
+
+
+
+#d2 #d3 h3 span {
+    color:red;
+    display:block;
+    font-size:20px;
+    line-height:70px;
+    transform:translateY(100px);
+    opacity:0;
+    animation:spns 1.5s 1 ease-out forwards;
+}
+
+@keyframes spns {
+    0%{transform:translateY(100px);opacity:0}
+    50%{transform:translateY(100px);opacity:0}
+    100%{transform:translateY(0px);opacity:1}
+}
+
+
+
+
+#d2 #d3 h3 span:nth-child(1) {
+    font-size:25px;
+    color:blue;
+    text-transform:uppercase;
+    animation-delay:.3s;
+}
+
+#d2 #d3 h3 span:nth-child(2) {
+    animation-delay:.6s;
+}
+
+#d2 #d3 h3 span:nth-child(3) {
+    animation-delay:.9s;
+}
+
+#d2 #d3 h3 span:nth-child(4) {
+    animation-delay:1.2s;
+}
+
+#d2 #d3 h3 span:nth-child(5) {
+    animation-delay:1.5s;
+}
+
+#d2 #d3::before {
+    content:'';
+    display:block;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    top:-50px;
+    right:-50px;
+    background:rgb(225,0,0);
+    position:absolute
+}
+
+#d2 #d3::after {
+    content:'';
+    display:block;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    bottom:-50px;
+    left:-50px;
+    background:rgb(0,0,225);
+    position:absolute
+}
+
+
+
+
