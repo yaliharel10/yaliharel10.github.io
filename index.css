@@ -99,7 +99,7 @@ body {
     color:red;
     display:block;
     font-size:20px;
-    line-height:70px;
+    line-height:40px;
     transform:translateY(100px);
     opacity:0;
     animation:spns 1.5s 1 ease-out forwards;
