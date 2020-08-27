@@ -140,8 +140,8 @@ body {
 #d2 #d3::before {
     content:'';
     display:block;
-    width:120px;
-    height:120px;
+    width:80px;
+    height:80px;
     border-radius:50%;
     top:-50px;
     right:-50px;
@@ -152,8 +152,8 @@ body {
 #d2 #d3::after {
     content:'';
     display:block;
-    width:120px;
-    height:120px;
+    width:80px;
+    height:80px;
     border-radius:50%;
     bottom:-50px;
     left:-50px;
